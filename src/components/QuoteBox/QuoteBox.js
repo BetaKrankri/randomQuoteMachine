@@ -2,6 +2,7 @@ import './QuoteBox.css';
 
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Button from '../Button/Button';
 
 function QuoteBox(props) {
 
@@ -28,7 +29,7 @@ function QuoteBox(props) {
             <Row className='my-2'>
                 <Col>
                 {/* NewQuote Botton */}
-                    <div className='btn' id='new-quote'>New Quote</div>
+                <Button />
                 </Col>
             </Row>
         </Container>
