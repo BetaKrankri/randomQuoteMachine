@@ -6,26 +6,26 @@ import { Container, Row, Col } from 'reactstrap';
 function QuoteBox(props) {
 
     return (
-        <Container id='quote-box' fluid>
+        <Container id='quote-box' fluid className='pt-5 pb-4 px-3 px-sm-4 px-md-5 pb-md-5'>
             {/* Text */}
-            <Row>
-                <Col id='text' >
-                        <i class="fa-solid fa-quote-left"></i>
+            <Row className='mb-4'>
+                <Col id='text' className='display-6'>
+                        <i class="fa-solid fa-quote-left me-2"></i>
                         {/* here the quote text */}
-                        <span>If you want to lift yourself up, lift up someone else.</span> 
+                        <span>Aqui debe ir una frase super mamalona de un wey mamon pa reflexionar </span> 
                 </Col>
             </Row>
             {/* Author */}
-            <Row>
-                <Col>
+            <Row className='mb-3'>
+                <Col id='author' className='text-end fs-5'>
                     <span>
                         {/* here goes the author */}
-                        - Booker T. Washington
+                        - Supuesto Wey Mamón
                     </span>
                 </Col>
             </Row>
             {/* Bottons Row*/}
-            <Row>
+            <Row className='my-2'>
                 <Col>
                 {/* NewQuote Botton */}
                     <div className='btn' id='new-quote'>New Quote</div>
