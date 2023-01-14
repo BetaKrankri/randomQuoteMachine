@@ -15,8 +15,6 @@ function App() {
     return () => { };
   }, []);
 
-
-
   function toogleQuote() {
     setQuote({ author: '', quote: '', category: '' })
     QMach.getQuoteAuthor().then(quoteFetched => {
@@ -57,13 +55,16 @@ function App() {
           />
           <Row>
             <Col id='myHuella'>
-              <p>by <a
+              <p style={{
+                  color: 'white',
+                }}>by <a
                 href='https://github.com/BetaKrankri/randomQuoteMachine'
                 target='_blank'
                 rel="noreferrer"
                 style={{
                   color: 'white',
-                  textDecoration: 'none'
+                  textDecoration: 'none',
+                  fontWeight: 'bold'
                 }}><span>BetaKrankri</span></a></p>
             </Col>
           </Row>
