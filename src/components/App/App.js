@@ -15,11 +15,13 @@ function App() {
     return () => { };
   }, []);
 
-  function toogleQuote() {
+  async function toogleQuote() {
     setQuote({ author: '', quote: '', category: '' })
-    QMach.getQuoteAuthor().then(quoteFetched => {
-      setQuote(quoteFetched);
-    })
+    let newQuote;
+    do {
+      newQuote = await QMach.getQuoteAuthor();
+    } while (newQuote.quote.length > 200);
+    setQuote(newQuote);
   }
 
   function getRGB() {
