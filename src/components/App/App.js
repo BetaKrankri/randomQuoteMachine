@@ -20,7 +20,7 @@ function App() {
     let newQuote;
     do {
       newQuote = await QMach.getQuoteAuthor();
-    } while (newQuote.quote.length > 200);
+    } while (newQuote.quote.length > 100);
     setQuote(newQuote);
   }
 
