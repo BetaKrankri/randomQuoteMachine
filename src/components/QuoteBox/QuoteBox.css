@@ -1,0 +1,9 @@
+#quote-box {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+#new-quote {
+    background-color: rgb(23, 160, 133);
+    color: white;
+}
