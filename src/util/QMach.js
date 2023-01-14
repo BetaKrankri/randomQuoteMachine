@@ -1,6 +1,6 @@
 export const QMach = {
     getQuoteAuthor: function () {
-        return fetch('https://api.api-ninjas.com/v1/quotes?category=home', {
+        return fetch('https://api.api-ninjas.com/v1/quotes?category=learning', {
             headers: { 'X-Api-Key': 'shli7hye/vgFRn1nvgpcMA==NQMluQC90IpVwFRw' },
             contentType: 'application/json',
         }).then(response => response.json())

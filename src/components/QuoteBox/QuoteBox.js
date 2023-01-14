@@ -11,7 +11,7 @@ function QuoteBox({ quote, onNewQuote, color }) {
             {/* Text */}
             <Row className='mb-4'>
                 <Col id='text'
-                    className='display-6'
+                    className='fs-1 fw-light'
                     style={{ color: color }}
                 >
                     <i className="fa-solid fa-quote-left me-2"></i>

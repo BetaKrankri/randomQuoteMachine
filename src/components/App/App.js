@@ -1,5 +1,3 @@
-import './App.css';
-
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import QuoteBox from '../QuoteBox/QuoteBox';
@@ -20,7 +18,7 @@ function App() {
 
 
   function toogleQuote() {
-    setQuote({author:'',quote:'',category:''})
+    setQuote({ author: '', quote: '', category: '' })
     QMach.getQuoteAuthor().then(quoteFetched => {
       setQuote(quoteFetched);
     })
@@ -36,7 +34,7 @@ function App() {
     return [r, g, b];
   }
 
-  function rgbStringify(colorArray){
+  function rgbStringify(colorArray) {
     return 'rgb(' + colorArray[0] + ',' + colorArray[1] + ',' + colorArray[2] + ')';
   }
 
@@ -54,12 +52,26 @@ function App() {
         <Col className='px-0' sm={8} md={7} xl={5}>
           <QuoteBox
             quote={quote}
-            onNewQuote={() => {toogleQuote(); setColor(getRGB()) }}
+            onNewQuote={() => { toogleQuote(); setColor(getRGB()) }}
             color={rgbStringify(color)}
           />
+          <Row>
+            <Col id='myHuella'>
+              <p>by <a
+                href='https://github.com/BetaKrankri/randomQuoteMachine'
+                target='_blank'
+                rel="noreferrer"
+                style={{
+                  color: 'white',
+                  textDecoration: 'none'
+                }}><span>BetaKrankri</span></a></p>
+            </Col>
+          </Row>
         </Col>
       </Row>
+
     </Container>
+
   );
 }
 
