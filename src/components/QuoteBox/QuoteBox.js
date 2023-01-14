@@ -59,9 +59,6 @@ function QuoteBox({ quote, onNewQuote, color }) {
 
 function renderTextPlaceholder(color) {
     let rdn = () => Math.floor(Math.random() * 5 + 1);
-
-
-
     return (
         <p className='placeholder-glow'>
             <span className={'placeholder mx-1 col-' + rdn()} style={{ backgroundColor: color }}></span>
