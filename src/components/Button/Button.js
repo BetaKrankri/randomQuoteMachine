@@ -1,15 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "reactstrap";
+import Button from "reactstrap";
 
-function Button(props) {
+function NewQ({ onClick }) {
     return (
-        <Container>
-            <Row>
-                <Col>
-                    <div className='btn' id='new-quote'>New Quote</div>
-                </Col>
-            </Row>
-        </Container>);
+        <Button className='btn' id='new-quote'>New Quote</Button>
+    );
 }
 
 export default Button;
