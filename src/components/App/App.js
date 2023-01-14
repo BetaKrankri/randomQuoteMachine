@@ -46,7 +46,8 @@ function App() {
       fluid
       style={{
         height: '100vh',
-        backgroundColor: rgbStringify(color)
+        backgroundColor: rgbStringify(color),
+        transition: 'all 1s ease'
       }}
     >
       <Row className='justify-content-center align-items-center' style={{ height: '100%' }} >

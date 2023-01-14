@@ -26,8 +26,12 @@ function QuoteBox({ quote, onNewQuote, color }) {
                     style={{ color: color }}
                 >
                     <span>
-                        - {quote.author}{!quote.author && <span className='placeholder col-4' style={{ backgroundColor: color }}></span>}
-
+                        - {quote.author}{!quote.author &&
+                            <span className='placeholder col-4'
+                                style={{
+                                    backgroundColor: color,
+                                    transition: 'all 1s ease'
+                                }}></span>}
                     </span>
                 </Col>
             </Row>
@@ -41,6 +45,7 @@ function QuoteBox({ quote, onNewQuote, color }) {
                     <Button id='new-quote' className=''
                         onClick={onNewQuote}
                         style={{
+                            transition: 'all 1s ease',
                             backgroundColor: color,
                             border: 'none',
                             height: '3rem'
