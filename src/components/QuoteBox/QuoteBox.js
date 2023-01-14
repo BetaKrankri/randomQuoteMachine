@@ -39,7 +39,8 @@ function QuoteBox({ quote, onNewQuote, color }) {
 
             <Row className='my-2 justify-content-end'>
                 <Col>
-                    <a href='twitter.com/intent/tweet' target='_top' id='tweet-quote'></a>
+                    <a href='twitter.com/intent/tweet' target='_top' id='tweet-quote'> 
+                    </a>
                 </Col>
                 <Col xs={10} className={'text-end'}>
                     <Button id='new-quote' className=''
